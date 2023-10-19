@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: white;">Rock<br>Paper<br>Scissors</h1>
+            <div class="score computer-score">
+                <div class="score-title">computer score</div>
+                <div class="score-number-computer">0</div>
+            </div>
+            <div class="score your-score">
+                <div class="score-title">your<br>score</div>
+                <div class="score-number-user">0</div>
+            </div>
+        </div>
+        <section class="play">
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="Rock.png" alt="Rock">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                    <img src="Scissors.png" alt="Scissors">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+            </button>
+        </section>
+    </div>
+
+    <section class="results hidden">
+        <h2 class="results-heading">you picked</h2>
+        <h2 class="results-heading">pc picked</h2>
+        <div class="winner-result hidden" >
+            <div class="winner-text"></div>
+            <button class="play-again">play agian</button>
+        </div>
+        <div class="results-result"></div>
+        <div class="results-result"></div>
+    </section>
+    <!--    rules & next button -->
+    <button class="rules-btn">rules</button>
+    <button class="next-btn display">Next</button>
+    <!-- rules of the game -->
+    <section class="modal">
+        <div class="modal-container">
+            <header class="close">
+                <button class="close-btn">
+                    X
+                </button>
+            </header>
+            <img src="Frame 4.png" alt="">
+        </div>
+    </section>
+
+    <!---winner banner-->
+    <section class="cup hidden">
+        <div class="stars">
+            <img src="Group5stars.png" alt="">
+        </div>
+        <div class="trophy">
+            <img src="Vector.png" alt="">
+        </div>
+        <div class="celabrataion">
+            <h1 class="hurray">Hurray</h1>
+            <h2 class="msg">you won the game</h2>
+            <button class="play-again-cup">play agian</button>
+        </div>
+    </section>
+    <!--scripts-->
+    <script src="game.js"></script>
+</body>
+</html>
